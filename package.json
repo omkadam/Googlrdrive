@@ -1,0 +1,17 @@
+{
+  "name": "google-drive-clone",
+  "version": "1.0.0",
+  "description": "This is the google drive clone application using nodejs and aws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Om Kadam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.4"
+  }
+}
