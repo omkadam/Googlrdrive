@@ -1,0 +1,40 @@
+class Node {
+    constructor(val){
+        this.first = val
+        this.next = null
+    }
+}
+class Stack {
+    constructor(){
+        this.first = null
+        this.last = null
+        this.length = 0
+    }
+
+    push(val){
+        let newnode = new Node(val)
+        if(!this.first){
+            this.first = newnode
+            this.last = newnode
+        } else{
+            let temp = this.first
+            this.first = newnode
+            this.first.next = temp
+        }
+        return ++this.size
+    }
+
+    pop(){
+        if(!this.first){
+            return null
+        }
+        let temp = this.first
+        if(this.first===this.last){
+            this.last = null
+        } else{
+            this.first = this.first.next
+            this.size--
+        }
+        return temp.value
+    }
+}
